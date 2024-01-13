@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Haptic Behavior Sensing Research Group</title>
+    <!-- Add your custom CSS file link here if needed -->
+</head>
+<body>
+
+<!-- Content for Home Page -->
+<section id="home">
+    <h2>Welcome to Haptic Behavior Sensing Research Group</h2>
+
+    <!-- Rolling Images with Links -->
+    <div id="rolling-images">
+        <!-- Add your rolling images with links here -->
+        <a href="https://github.com/yourgithublink" target="_blank"><img src="github_image.jpg" alt="GitHub"></a>
+        <a href="https://www.youtube.com/youryoutubelink" target="_blank"><img src="youtube_image.jpg" alt="YouTube"></a>
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- Lab News -->
+    <div id="lab-news">
+        <h3>Lab News</h3>
+        <ul>
+            <li>News item 1</li>
+            <li>News item 2</li>
+            <!-- Add more news items with bullet points -->
+        </ul>
+    </div>
+</section>
+
+</body>
+</html>
