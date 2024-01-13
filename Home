@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haptic Behavior Sensing</title>
+    <!-- Add your custom CSS file link here if needed -->
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="papers.html">Papers</a></li>
+        <li><a href="wiki.html">Wiki</a></li>
+    </ul>
+</nav>
+
+<!-- Include the content of the specific section using JavaScript or another method -->
+
+</body>
+</html>
