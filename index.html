@@ -40,7 +40,7 @@
 
 <body>
 
-<audio id="backgroundMusic_Home" loop autoplay>
+<audio id="backgroundMusic_Home" autoplay loop>
     <source src="assets/audios/BjornLynne-HallwayofStrings.mp3" type="audio/mp3">
 </audio>
 <button onclick="toggleAudio()">
@@ -205,18 +205,16 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-var audio = document.getElementById('backgroundMusic_Home');
-var playPauseIcon = document.getElementById('playPauseIcon');
-var isPlaying = true;
-function toggleAudio() {
-if (isPlaying) {
+const audio = document.getElementById('backgroundMusic_Home');
+const playPauseIcon = document.getElementById('playPauseIcon');
+playPauseIcon.addEventListener{'click',function(){
+if (audio.play) {
     audio.pause();
-    playPauseIcon.innerHTML = '▶️';
+    playPauseIcon.textContent = '▶️';
 } else {
     audio.play();
-    playPauseIcon.innerHTML = '⏸️';
+    playPauseIcon.textContent = '⏸️';
 }
-isPlaying = !isPlaying;
 }
 </script>
 
