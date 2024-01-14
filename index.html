@@ -206,19 +206,17 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 var audio = document.getElementById('backgroundMusic_Home');
-    var playPauseIcon = document.getElementById('playPauseIcon');
-
-    function toggleAudio() {
-        if (audio.paused) {
-            audio.play();
-            playPauseIcon.textContent = '⏸️';
-        } else {
-            audio.pause();
-            playPauseIcon.textContent = '▶️';
-        }
-    }
+var playPauseIcon = document.getElementById('playPauseIcon');
+function toggleAudio() {
+if (audio.paused) {
+    audio.play();
+    playPauseIcon.textContent = '⏸️';
+} else {
+    audio.pause();
+    playPauseIcon.textContent = '▶️';
+}
+}
 </script>
-
 
 </body>
 
