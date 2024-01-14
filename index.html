@@ -207,14 +207,16 @@ function showSlides(n) {
 }
 var audio = document.getElementById('backgroundMusic_Home');
 var playPauseIcon = document.getElementById('playPauseIcon');
+var isPlaying = true;
 function toggleAudio() {
-if (audio.paused) {
-    audio.play();
-    playPauseIcon.innerHTML = '⏸️';
-} else {
+if (isPlaying) {
     audio.pause();
     playPauseIcon.innerHTML = '▶️';
+} else {
+    audio.play();
+    playPauseIcon.innerHTML = '⏸️';
 }
+isPlaying = !isPlaying;
 }
 </script>
 
