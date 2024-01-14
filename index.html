@@ -23,6 +23,7 @@
 
       gtag('config', 'G-WBLHMV4VGE');
     </script>
+<!--
 <style>
         button {
             background: none;
@@ -35,7 +36,8 @@
         #playPauseIcon {
             color: rgba(169, 169, 169, 0.1); /* Translucent light gray color */
         }
-    </style>
+</style>
+-->
 </head>
 
 <body>
@@ -43,9 +45,11 @@
 <audio id="backgroundMusic_Home" autoplay loop>
     <source src="assets/audios/BjornLynne-HallwayofStrings.mp3" type="audio/mp3">
 </audio>
+<!--
 <button onclick="toggleAudio()">
     <span id="playPauseIcon">⏸️</span>
 </button>
+-->
     <div style="width:1000px;margin: 0px auto;">
 
         <header id="header" width="1000px" style="display:flex;justify-content: space-around;">
@@ -205,6 +209,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
 const audio = document.getElementById('backgroundMusic_Home');
 const playPauseIcon = document.getElementById('playPauseIcon');
 playPauseIcon.addEventListener{'click',function(){
