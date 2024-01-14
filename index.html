@@ -23,6 +23,19 @@
 
       gtag('config', 'G-WBLHMV4VGE');
     </script>
+    <style>
+        button {
+            background: none;
+            border: none;
+            font-size: 2em;
+            cursor: pointer;
+            outline: none;
+        }
+
+        #playPauseIcon {
+            color: rgba(169, 169, 169, 0.05); /* Translucent light gray color */
+        }
+    </style>
 </head>
 
 <body>
@@ -30,6 +43,9 @@
     <audio id="backgroundMusic_Home" autoplay loop>
 	<source src="assets/audios/BjornLynne-HallwayofStrings.mp3" type="audio/mp3">
     </audio>
+    <button onclick="toggleAudio()">
+        <span id="playPauseIcon">⏸️</span>
+    </button>
 
     <div style="width:1000px;margin: 0px auto;">
 
