@@ -30,8 +30,7 @@
 <audio id="backgroundMusic_Home" loop autoplay>
     <source src="assets/audios/BjornLynne-HallwayofStrings.mp3" type="audio/mp3">
 </audio>
-<button onclick="audio.play()">Play Music</button>
-<button onclick="audio.pause()">Pause Music</button>
+<button onclick="toggleAudio()">Pause Music</button>
     <div style="width:1000px;margin: 0px auto;">
 
         <header id="header" width="1000px" style="display:flex;justify-content: space-around;">
@@ -191,6 +190,16 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+ var audio = document.getElementById('backgroundMusic');
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play();
+            document.querySelector('button').textContent = 'Pause Music';
+        } else {
+            audio.pause();
+            document.querySelector('button').textContent = 'Play Music';
+        }
 </script>
 
 
