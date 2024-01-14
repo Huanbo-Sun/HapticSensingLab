@@ -33,7 +33,7 @@
         }
 
         #playPauseIcon {
-            color: rgba(169, 169, 169, 0.05); /* Translucent light gray color */
+            color: rgba(169, 169, 169, 0.08); /* Translucent light gray color */
         }
     </style>
 </head>
@@ -206,6 +206,21 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+</script>
+<script>
+    var audio = document.getElementById('backgroundMusic_Home');
+    var playPauseIcon = document.getElementById('playPauseIcon');
+    var isPlaying = true;
+    function toggleAudio() {
+        if (isPlaying) {
+            audio.pause();
+            playPauseIcon.innerHTML = '▶️';
+        } else {
+            audio.play();
+            playPauseIcon.innerHTML = '⏸️';
+        }
+        isPlaying = !isPlaying;
+    }
 </script>
 </body>
 </html>
