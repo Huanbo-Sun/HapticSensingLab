@@ -23,13 +23,29 @@
 
       gtag('config', 'G-WBLHMV4VGE');
     </script>
+    <style>
+        button {
+            background: none;
+            border: none;
+            font-size: 2em;
+            cursor: pointer;
+            outline: none;
+        }
+
+        #playPauseIcon {
+            color: rgba(169, 169, 169, 0.08); /* Translucent light gray color */
+        }
+    </style>
 </head>
 
 <body>
 
-<audio id="backgroundMusic_Home" loop autoplay>
+<audio id="backgroundMusic_JoinUs" loop autoplay>
     <source src="assets/audios/HuaweiHiringMusic.mp3" type="audio/mp3">
 </audio>
+<button onclick="toggleAudio()">
+    <span id="playPauseIcon">⏸️</span>
+</button>
 	
     <div style="width:1000px;margin: 0px auto;">
 
@@ -107,5 +123,20 @@
 <footer>
     <p class="copyright">©Haptic Sensing Lab 2024</p>
 </footer>
-
+<script>
+    var audio = document.getElementById('backgroundMusic_JoinUs');
+    var playPauseIcon = document.getElementById('playPauseIcon');
+    var isPlaying = true;
+    function toggleAudio() {
+        if (isPlaying) {
+            audio.pause();
+            playPauseIcon.innerHTML = '▶️';
+        } else {
+            audio.play();
+            playPauseIcon.innerHTML = '⏸️';
+        }
+        isPlaying = !isPlaying;
+    }
+</script>
+</body>
 </html>
