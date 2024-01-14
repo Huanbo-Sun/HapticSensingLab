@@ -210,10 +210,10 @@ var playPauseIcon = document.getElementById('playPauseIcon');
 function toggleAudio() {
 if (audio.paused) {
     audio.play();
-    playPauseIcon.textContent = '⏸️';
+    playPauseIcon.innerHTML = '⏸️';
 } else {
     audio.pause();
-    playPauseIcon.textContent = '▶️';
+    playPauseIcon.innerHTML = '▶️';
 }
 }
 </script>
