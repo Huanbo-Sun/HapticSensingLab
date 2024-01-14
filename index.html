@@ -42,14 +42,10 @@
 
 <body>
 
-<audio id="backgroundMusic_Home" autoplay loop>
-    <source src="assets/audios/BjornLynne-HallwayofStrings.mp3" type="audio/mp3">
-</audio>
-<!--
-<button onclick="toggleAudio()">
-    <span id="playPauseIcon">⏸️</span>
-</button>
--->
+    <audio id="backgroundMusic_Home" autoplay loop>
+	<source src="assets/audios/BjornLynne-HallwayofStrings.mp3" type="audio/mp3">
+    </audio>
+
     <div style="width:1000px;margin: 0px auto;">
 
         <header id="header" width="1000px" style="display:flex;justify-content: space-around;">
@@ -162,13 +158,13 @@
         <div class="section" id="news">
             <h1>Lab News</h1>
             <ul>
-				<li><span class="paper-award">We have several openings for PhD students (ME, BME, ECE, CS) and one Postdoc position. Please see <a href="people.html">Join Us</a> to apply!</span></li>
+		<li><span class="paper-award">We have several openings for PhD students (ME, BME, ECE, CS) and one Postdoc position. Please see <a href="people.html">Join Us</a> to apply!</span></li>
                 <!-- 
-		    <li>(08/7/2023) We are hosting a Hackathon even at Duke on <a href="https://sites.google.com/view/hmt-hackathon-duke-2023/">Generative AI for Human-Machine Teaming.</a></li>
-				<li>Our <a href="https://www.cs.columbia.edu/~bchen/neural-state-variables/">Cover Article</a> on discovering governing variables of dynamical systems from videos is published at Nature Computational Science!</li>
-			        <li>Our <a href="https://robot-morphology.cs.columbia.edu/">Cover Article</a> on robot visual self-modeling is published at Science Robotics!</li>
+		<li>(08/7/2023) We are hosting a Hackathon even at Duke on <a href="https://sites.google.com/view/hmt-hackathon-duke-2023/">Generative AI for Human-Machine Teaming.</a></li>
+		<li>Our <a href="https://www.cs.columbia.edu/~bchen/neural-state-variables/">Cover Article</a> on discovering governing variables of dynamical systems from videos is published at Nature Computational Science!</li>
+		<li>Our <a href="https://robot-morphology.cs.columbia.edu/">Cover Article</a> on robot visual self-modeling is published at Science Robotics!</li>
 		-->
-                     <li>(09/01/2024) Our lab lands at xx University.</li>
+                <li>(09/01/2024) Our lab lands at xx University.</li>
             </ul>
             <p></p>
             <div style="clear: both;"></div>
@@ -210,17 +206,17 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-const audio = document.getElementById('backgroundMusic_Home');
-const playPauseIcon = document.getElementById('playPauseIcon');
-playPauseIcon.addEventListener{'click',function(){
-if (audio.play) {
-    audio.pause();
-    playPauseIcon.textContent = '▶️';
-} else {
-    audio.play();
-    playPauseIcon.textContent = '⏸️';
-}
-}}
+// var audio = document.getElementById('backgroundMusic_Home');
+// var playPauseIcon = document.getElementById('playPauseIcon');
+// playPauseIcon.addEventListener{'click',function(){
+// if (audio.play) {
+//     audio.pause();
+//     playPauseIcon.textContent = '▶️';
+// } else {
+//     audio.play();
+//     playPauseIcon.textContent = '⏸️';
+// }
+// }}
 </script>
 
 </body>
